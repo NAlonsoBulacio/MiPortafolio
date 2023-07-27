@@ -42,10 +42,7 @@ const Proyecto = () => {
               <p className="card-text">
                 Diseñar y desarrollar una App de venta y alquiler de bienes
                 raíces que incluía: autenticación, búsquedas, filtrados
-                combinados, ordenamientos, baneo de usuarios, envío de emails,
-                deploy, uso de localstorage, localización con google maps de
-                cada propiedad, implementación de pasarela de pagos de mercado
-                pago, etc
+                combinados, ordenamientos, baneo de usuarios, envío de emails, etc
               </p>
               <div className="d-flex justify-content-between align-items-center">
                 <div classNameName="d-flex gap-2">
