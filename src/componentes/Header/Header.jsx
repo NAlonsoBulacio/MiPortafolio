@@ -24,7 +24,7 @@ const Header = () => {
           <li className="nav-item"><a className="nav-link" href="#about">Sobre Mi</a></li>
           <li className="nav-item"><a className="nav-link" href="#projects">Proyectos</a></li>
           <li className="nav-item"><a className="nav-link" href="#skills">Habilidades</a></li>
-          <li className="nav-item"><a className="nav-link" href="#">Contactame</a></li>
+          <li className="nav-item"><a className="nav-link" href="mailto:nicoalonso99.na@gmail.com">Contactame</a></li>
         </ul>
       </div>
     </div>
