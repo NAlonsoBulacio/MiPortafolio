@@ -22,7 +22,11 @@ const Proyecto = () => {
             <p classNameName="lead">Proyectpo Final en Soy Henry.</p>
           </div>
           <div className="card shadow-sm">
-            <a href={projects[0].deploy || projects[0].github} target="_blank" rel="noreferrer">
+            <a
+              href={projects[0].deploy || projects[0].github}
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 className="bd-placeholder-img card-img-top"
                 src={projects[0].image}
@@ -36,9 +40,12 @@ const Proyecto = () => {
             </a>
             <div className="card-body">
               <p className="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Diseñar y desarrollar una App de venta y alquiler de bienes
+                raíces que incluía: autenticación, búsquedas, filtrados
+                combinados, ordenamientos, baneo de usuarios, envío de emails,
+                deploy, uso de localstorage, localización con google maps de
+                cada propiedad, implementación de pasarela de pagos de mercado
+                pago, etc
               </p>
               <div className="d-flex justify-content-between align-items-center">
                 <div classNameName="d-flex gap-2">
@@ -73,11 +80,15 @@ const Proyecto = () => {
         </div>
         <div className="col-md-6 col-lg-4">
           <div classNameName="my-1 py-1">
-            <h3 classNameName="display-5">M R Propiedades</h3>
-            <p classNameName="lead">Proyectpo Final en Soy Henry.</p>
+            <h3 classNameName="display-5">Aplicación Videogames</h3>
+            <p classNameName="lead">Proyectpo Individual en Soy Henry.</p>
           </div>
           <div className="card shadow-sm">
-            <a href={projects[1].deploy || projects[1].github} target="_blank" rel="noreferrer">
+            <a
+              href={projects[1].deploy || projects[1].github}
+              target="_blank"
+              rel="noreferrer"
+            >
               <img
                 className="bd-placeholder-img card-img-top"
                 src={projects[1].image}
@@ -91,9 +102,9 @@ const Proyecto = () => {
             </a>
             <div className="card-body">
               <p className="card-text">
-                This is a wider card with supporting text below as a natural
-                lead-in to additional content. This content is a little bit
-                longer.
+                Diseñar y desarrollar una web de videojuegos que incluye
+                búsqueda de videojuegos, filtros combinados y la creación de
+                nuevos videojuegos.
               </p>
               <div className="d-flex justify-content-between align-items-center">
                 <div classNameName="d-flex gap-2">
