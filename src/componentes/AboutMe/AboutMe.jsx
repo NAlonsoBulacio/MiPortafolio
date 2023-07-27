@@ -42,7 +42,7 @@ const AboutMe = () => {
             <br className="d-none d-sm-block" />
           </h3>
           <p className="font-light">
-            Disfruto mucho estudiar, pase por distintos ambitos como la Agronomia, Musica y ahora programación!
+            Disfruto mucho el trabajo en equipo y estudiar, pase por distintos ambitos como la Agronomia, Música y ahora programación!
             Desde mis inicios en el E-Commerce quedé fascinado con la tecnologia, el diseño web y el marketing.
           </p>
           <p className="font-light">
