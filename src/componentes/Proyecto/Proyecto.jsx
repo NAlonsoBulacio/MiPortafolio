@@ -9,17 +9,27 @@ const Proyecto = () => {
     height: "300px",
     borderRadius: "21px 21px 0 0",
   };
+  const divStyle = {
+    flexShrink: 0,
+    maxWidth: "100%",
+  };
 
   return (
-    <section id="projects" classNameName="row my-md-3">
-      <h1 classNameName="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
+    <section id="projects" className="row my-md-3 overflow-hidden">
+      <div className="overflow-hidden">
+      <div className="overflow-hidden">
+      <h1 className="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center">
         PROYECTOS
       </h1>
-      <div className="row justify-content-center">
-        <div className="col-md-6 col-lg-4">
-          <div classNameName="my-1 py-1">
-            <h3 classNameName="display-5">M R Propiedades</h3>
-            <p classNameName="lead">Proyectpo Final en Soy Henry.</p>
+      </div>
+      <div className="hr-container">
+        <hr className="custom-hr" />
+      </div>
+      <div className="row text-bg-dark row-cols-1 row-cols-md-2 justify-content-center overflow-hidden" style={{ marginRight: "0px" }} >
+        <div className="col custom-project overflow-hidden">
+          <div className=" my-1 py-1">
+            <h3 className="display-5">M R Propiedades</h3>
+            <p className="lead">Proyectpo Final en Soy Henry.</p>
           </div>
           <div className="card shadow-sm">
             <a
@@ -45,15 +55,15 @@ const Proyecto = () => {
                 combinados, ordenamientos, baneo de usuarios, envío de emails, etc
               </p>
               <div className="d-flex justify-content-between align-items-center">
-                <div classNameName="d-flex gap-2">
+                <div className="d-flex gap-2">
                   {projects[0].technologies.map((t, index) => (
                     <span key={index}>{t}</span>
                   ))}
                 </div>
-                <div classNameName="d-flex gap-2">
+                <div className="d-flex gap-2">
                   {projects[0].github && (
                     <a
-                      classNameName="hover-translate-y-1 duration-300"
+                      className="hover-translate-y-1 duration-300"
                       href={projects[0].github}
                       target="_blank"
                       rel="noreferrer"
@@ -62,7 +72,7 @@ const Proyecto = () => {
                     </a>
                   )}
                   <a
-                    classNameName="hover-rotate-45 duration-300"
+                    className="hover-rotate-45 duration-300"
                     href={projects[0].deploy}
                     target="_blank"
                     rel="noreferrer"
@@ -70,15 +80,14 @@ const Proyecto = () => {
                     <BsArrowUpRightCircle size={40} />
                   </a>
                 </div>
-                <small className="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
-        <div className="col-md-6 col-lg-4">
-          <div classNameName="my-1 py-1">
-            <h3 classNameName="display-5">Aplicación Videogames</h3>
-            <p classNameName="lead">Proyectpo Individual en Soy Henry.</p>
+        <div className="col custom-project overflow-hidden">
+          <div className="my-1 py-1">
+            <h3 className="display-5">Aplicación Videogames</h3>
+            <p className="lead">Proyectpo Individual en Soy Henry.</p>
           </div>
           <div className="card shadow-sm">
             <a
@@ -104,15 +113,15 @@ const Proyecto = () => {
                 nuevos videojuegos.
               </p>
               <div className="d-flex justify-content-between align-items-center">
-                <div classNameName="d-flex gap-2">
+                <div className="d-flex gap-2">
                   {projects[1].technologies.map((t, index) => (
                     <span key={index}>{t}</span>
                   ))}
                 </div>
-                <div classNameName="d-flex gap-2">
+                <div className="d-flex gap-2">
                   {projects[1].github && (
                     <a
-                      classNameName="hover-translate-y-1 duration-300"
+                      className="hover-translate-y-1 duration-300"
                       href={projects[1].github}
                       target="_blank"
                       rel="noreferrer"
@@ -122,7 +131,7 @@ const Proyecto = () => {
                   )}
 
                   <a
-                    classNameName="hover-rotate-45 duration-300"
+                    className="hover-rotate-45 duration-300"
                     href={projects[1].deploy}
                     target="_blank"
                     rel="noreferrer"
@@ -130,11 +139,11 @@ const Proyecto = () => {
                     <BsArrowUpRightCircle size={40} />
                   </a>
                 </div>
-                <small className="text-body-secondary">9 mins</small>
               </div>
             </div>
           </div>
         </div>
+      </div>
       </div>
     </section>
   );

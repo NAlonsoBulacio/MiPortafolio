@@ -28,6 +28,9 @@ const Skills = () => {
       <h1 className="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
         Habilidades
       </h1>
+      <div className={style.hrContainer}>
+        <hr className={style.customHr} />
+      </div>
       <div className="d-flex justify-content-center">
         {skillsData.map((skill) => (
           <div key={skill.name} className={style.cardContainer}>

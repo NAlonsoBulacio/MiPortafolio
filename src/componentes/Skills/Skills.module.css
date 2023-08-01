@@ -19,3 +19,17 @@
     max-width: 80%;
     max-height: 80%;
   }
+  .hrContainer {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+  }
+  
+  .customHr {
+    border: 10px;
+    justify-content: center;
+    height: 5px; /* Ajusta el grosor del hr */
+    width: 50%;
+    background-color: #e2630e; /* Color bordó - puedes ajustar este valor */
+    margin: 10px 0; /* Espaciado vertical */
+  }

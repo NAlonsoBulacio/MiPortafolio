@@ -15,6 +15,9 @@
   max-width: 930px; 
   margin-top: 40px;
 }
+.p{
+  font-family: 'Roboto Mono', monospace;
+}
 
 .d-flex {
   margin-left: 65px;
@@ -27,4 +30,18 @@
 .imagen-nico {
   max-width: 300px;
   border-radius: 30%; 
+}
+.hr-container {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+
+.custom-hr {
+  border: 10px;
+  justify-content: center;
+  height: 5px; /* Ajusta el grosor del hr */
+  width: 50%;
+  background-color: #e2630e; /* Color bordó - puedes ajustar este valor */
+  margin: 10px 0; /* Espaciado vertical */
 }

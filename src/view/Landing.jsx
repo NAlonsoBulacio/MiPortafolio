@@ -5,7 +5,6 @@ import Header from "../componentes/Header/Header";
 import Footer from "../componentes/Footer/Footer";
 import AboutMe from "../componentes/AboutMe/AboutMe";
 import Proyecto from "../componentes/Proyecto/Proyecto";
-import Theme from "../componentes/Theme/Theme";
 import Skills from "../componentes/Skills/Skills";
 import Home from "../componentes/Home/Home";
 import Resume from "../componentes/Resume/Resume";
@@ -22,7 +21,6 @@ const Landing = () => {
       <Proyecto />
       <Resume />
       <Skills />
-      <Theme />
       <Footer />
     </div>
   );

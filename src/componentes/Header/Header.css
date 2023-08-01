@@ -1,0 +1,26 @@
+.img{
+    height: 130px;
+    width: 130px;
+}
+
+.navbar {
+    position: sticky;
+  }
+
+.icon-linkedin {
+    margin-right: 10px; 
+  }
+  
+
+  .icon-github {
+    margin-right: 10px; 
+  }
+
+  .icon-envelope {
+    margin-right: 10px;
+  }
+  .nav-link {
+    font-family: 'Roboto Mono', monospace;
+    color: white; 
+    margin-right: 13px;
+  }
