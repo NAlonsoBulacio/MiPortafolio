@@ -38,7 +38,7 @@ const AboutMe = () => {
         </div>
         <div className="flex flex-column gap-4">
           <h3 className="text-5xl font-bold">
-            Desarrollador de aplicaciones en Javascript 
+           
             <br className="d-none d-sm-block" />
           </h3>
           <p className="font-light">
