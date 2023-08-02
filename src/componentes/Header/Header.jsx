@@ -12,8 +12,8 @@ const Header = () => {
       data-bs-theme="dark"
     >
       <div className="container d-flex justify-content-between align-items-center">
-        <div>
-        <a className="navbar-brand nav-link" href="#">
+        <div className="nico-div">
+        <a className="navbar-brand nav-nico" href="#">
             Nicolás Alonso
           </a>
         </div>
@@ -32,6 +32,11 @@ const Header = () => {
             <li className="nav-item d-flex align-items-center">
               <a className="nav-link" href="#skills">
                 {language === 'es' ? 'Habilidades' : 'Skills'}
+              </a>
+            </li>
+            <li className="nav-item d-flex align-items-center">
+              <a className="nav-link" href="#contact">
+                {language === 'es' ? 'Contáctame' : 'Contact me'}
               </a>
             </li>
           </ul>

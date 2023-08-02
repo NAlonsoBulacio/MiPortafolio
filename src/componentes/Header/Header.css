@@ -2,26 +2,33 @@
     height: 130px;
     width: 130px;
 }
-
+.nav-nico{
+  border: white 1px ;
+  font-size:x-large;
+  color: #e2630ee3;
+}
 .navbar {
     position: sticky;
   }
 
 .icon-linkedin {
+  color: #e2630e;
     margin-right: 10px; 
   }
   
 
   .icon-github {
+    color: #e2630e;
     margin-right: 10px; 
   }
 
   .icon-envelope {
+    color: #e2630e;
     margin-right: 10px;
   }
   .nav-link {
     width: 100px;
-    font-family: 'Roboto Mono', monospace;
+    font-family: 'Noto Sans', sans-serif;
     color: white; 
   }
 
