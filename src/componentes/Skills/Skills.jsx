@@ -9,8 +9,9 @@ import BootImage from "../../images/boot.png";
 import NodeImage from "../../images/node.png";
 import PgImage from "../../images/pg.png";
 import style from "./Skills.module.css";
-
+import { useLanguage } from "../Language/LanguageContext";
 const Skills = () => {
+  const { language } = useLanguage();
   const skillsData = [
     { name: "Javascript", image: javascriptImage },
     { name: "HTML", image: HtmlImage },
@@ -26,7 +27,7 @@ const Skills = () => {
   return (
     <section id="skills" className="container my-5">
       <h1 className="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center overflow-hidden">
-        Habilidades
+        {language === 'es' ? "Habilidades" : "Skills"}
       </h1>
       <div className={style.hrContainer}>
         <hr className={style.customHr} />

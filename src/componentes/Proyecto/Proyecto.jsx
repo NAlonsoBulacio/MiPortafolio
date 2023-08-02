@@ -3,7 +3,10 @@ import projects from "../../constants/index";
 import { FaGithub } from "react-icons/fa";
 import { BsArrowUpRightCircle } from "react-icons/bs";
 import "./Proyecto.css";
+import { useLanguage } from '../Language/LanguageContext';
+
 const Proyecto = () => {
+  const { language } = useLanguage();
   const containerStyle = {
     width: "80%",
     height: "300px",
@@ -19,7 +22,7 @@ const Proyecto = () => {
       <div className="overflow-hidden">
       <div className="overflow-hidden">
       <h1 className="text-bg-dark me-md-3 pt-3 px-3 pt-md-5 px-md-5 text-center">
-        PROYECTOS
+        {language === 'es' ? "PROYECTOS" : "PROJECTS"}
       </h1>
       </div>
       <div className="hr-container">
@@ -29,7 +32,7 @@ const Proyecto = () => {
         <div className="col custom-project overflow-hidden">
           <div className=" my-1 py-1">
             <h3 className="display-5">M R Propiedades</h3>
-            <p className="lead">Proyectpo Final en Soy Henry.</p>
+            <p className="lead">{language === 'es' ? 'Proyecto Final en Soy Henry.' : "Soy Hnery final project."}</p>
           </div>
           <div className="card shadow-sm">
             <a
@@ -50,9 +53,7 @@ const Proyecto = () => {
             </a>
             <div className="card-body">
               <p className="card-text">
-                Diseñar y desarrollar una App de venta y alquiler de bienes
-                raíces que incluía: autenticación, búsquedas, filtrados
-                combinados, ordenamientos, baneo de usuarios, envío de emails, etc
+                {language === 'es' ? 'Diseñar y desarrollar una App de venta y alquiler de bienes raíces que incluía: autenticación, búsquedas, filtrados combinados, ordenamientos, baneo de usuarios, envío de emails, etc' : "Designing and developing a real estate sales and rental app that included: authentication, searches, combined filtering, sorting, user banning, email sending, etc."}
               </p>
               <div className="d-flex justify-content-between align-items-center">
                 <div className="d-flex gap-2" style={{marginLeft: "-15px"}}>
@@ -87,7 +88,7 @@ const Proyecto = () => {
         <div className="col custom-project overflow-hidden">
           <div className="my-1 py-1">
             <h3 className="display-5">Aplicación Videogames</h3>
-            <p className="lead">Proyectpo Individual en Soy Henry.</p>
+            <p className="lead">{language === 'es' ? 'Proyecto individual en Soy Henry.' : "Soy Hnery individual project."}</p>
           </div>
           <div className="card shadow-sm">
             <a
@@ -108,9 +109,7 @@ const Proyecto = () => {
             </a>
             <div className="card-body">
               <p className="card-text">
-                Diseñar y desarrollar una web de videojuegos que incluye
-                búsqueda de videojuegos, filtros combinados y la creación de
-                nuevos videojuegos.
+                {language === 'es' ? 'Diseñar y desarrollar una web de videojuegos que incluye búsqueda de videojuegos, filtros combinados y la creación de nuevos videojuegos.' : "Designing and developing a video game website that includes game search, combined filters, and the creation of new video games."}
               </p>
               <div className="d-flex justify-content-between align-items-center">
                 <div className="d-flex gap-2">

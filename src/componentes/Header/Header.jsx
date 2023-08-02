@@ -1,8 +1,11 @@
 import React from "react";
 import "./Header.css";
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
-
+import LanguageToggle from "../LanguageToggle/LanguageToggle";
+import { useLanguage } from "../Language/LanguageContext";
 const Header = () => {
+  const { language } = useLanguage();
+
   return (
     <nav
       className="navbar navbar-expand-md bg-dark sticky-top border-bottom py-4"
@@ -18,17 +21,17 @@ const Header = () => {
           <ul className="navbar-nav d-flex justify-content-center" style={{marginLeft: "-8px"}}>
             <li className="nav-item d-flex align-items-center">
               <a className="nav-link" href="#about">
-                Sobre Mi
+                {language === 'es' ? 'Sobre mi' : 'About me'}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#projects">
-                Proyectos
+                {language === 'es' ? 'Proyectos' : 'Projects'}
               </a>
             </li>
             <li className="nav-item">
               <a className="nav-link" href="#skills">
-                Habilidades
+                {language === 'es' ? 'Habilidades' : 'Skills'}
               </a>
             </li>
           </ul>
@@ -58,6 +61,7 @@ const Header = () => {
           >
             <FaEnvelope size={30} />
           </a>
+          <LanguageToggle />
         </div>
       </div>
     </nav>
