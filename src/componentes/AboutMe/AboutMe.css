@@ -45,3 +45,7 @@
   background-color: #e2630e; /* Color bordó - puedes ajustar este valor */
   margin: 10px 0; /* Espaciado vertical */
 }
+
+.custom-link {
+  text-decoration: none;
+}

@@ -7,7 +7,6 @@ import AboutMe from "../componentes/AboutMe/AboutMe";
 import Proyecto from "../componentes/Proyecto/Proyecto";
 import Skills from "../componentes/Skills/Skills";
 import Home from "../componentes/Home/Home";
-import Resume from "../componentes/Resume/Resume";
 import "../blog.css";
 
 const Landing = () => {
@@ -19,7 +18,6 @@ const Landing = () => {
         <AboutMe />
       </div>
       <Proyecto />
-      <Resume />
       <Skills />
       <Footer />
     </div>

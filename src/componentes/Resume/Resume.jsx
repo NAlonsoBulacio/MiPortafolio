@@ -1,5 +1,7 @@
 import React from "react";
 import MyPDF from "../../images/cv.pdf";
+import { FaCloudDownloadAlt } from "react-icons/fa";
+import './Resume.css';
 
 const Resume = () => {
   const handleDownloadPDF = () => {
@@ -15,10 +17,17 @@ const Resume = () => {
 
   return (
     <div>
-    <h1>DESCARGAR RESUME</h1>
-    <button onClick={handleDownloadPDF}>
-      Descargar Resume
-    </button>
+      <button
+        className="custom-button  duration-300"
+        onClick={handleDownloadPDF}
+        style={{ marginLeft: "0px", marginTop: "-3px" }}
+      >
+        Descargar CV{" "}
+        <FaCloudDownloadAlt
+          size={35}
+          style={{ marginLeft: "0px", marginTop: "-3px" }}
+        />
+      </button>
     </div>
   );
 };

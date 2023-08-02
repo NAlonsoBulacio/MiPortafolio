@@ -1,7 +1,8 @@
 import React from "react";
 import "./AboutMe.css";
 import NicoImg from "../../images/nico.jpg";
-import { FaLinkedinIn, FaGithub } from "react-icons/fa";
+import Resume from "../Resume/Resume";
+
 
 const AboutMe = () => {
   return (
@@ -16,22 +17,7 @@ const AboutMe = () => {
       <div className="container container-narrow d-lg-flex justify-content-center gap-5 sm:max-w-[600px]">
         <div className="d-flex flex-column-reverse justify-content-between gap-3" style={{ marginTop:"40px" ,marginRight: "50px" }}>
           <div className="d-flex gap-5" style={{ marginLeft: "89px" }}>
-            <a
-              href="https://www.linkedin.com/in/nicolasalons/"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:translate-y-1 duration-300"
-            >
-              <FaLinkedinIn size={40} />
-            </a>
-            <a
-              href="https://github.com/NAlonsoBulacio"
-              target="_blank"
-              rel="noreferrer"
-              className="hover:translate-y-1 duration-300"
-            >
-              <FaGithub size={40} />
-            </a>
+            <Resume />
           </div>
           <img src={NicoImg} alt="Nicolas Alonso" className="imagen-nico" />
         </div>

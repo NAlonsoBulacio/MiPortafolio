@@ -9,17 +9,14 @@ const Header = () => {
       data-bs-theme="dark"
     >
       <div className="container d-flex justify-content-between align-items-center">
-        {/* Parte izquierda */}
         <div>
         <a className="navbar-brand nav-link" href="#">
             Nicolás Alonso
           </a>
         </div>
-
-        {/* Parte central */}
-        <div className="justify-content-center">
-          <ul className="navbar-nav d-flex justify-content-center">
-            <li className="nav-item">
+        <div className="custom-container justify-content-center ">
+          <ul className="navbar-nav d-flex justify-content-center" style={{marginLeft: "-8px"}}>
+            <li className="nav-item d-flex align-items-center">
               <a className="nav-link" href="#about">
                 Sobre Mi
               </a>
@@ -36,7 +33,6 @@ const Header = () => {
             </li>
           </ul>
         </div>
-        {/* Parte derecha */}
         <div>
           <a
             href="https://www.linkedin.com/in/nicolasalons/"

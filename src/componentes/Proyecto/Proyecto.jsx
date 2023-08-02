@@ -55,7 +55,7 @@ const Proyecto = () => {
                 combinados, ordenamientos, baneo de usuarios, envío de emails, etc
               </p>
               <div className="d-flex justify-content-between align-items-center">
-                <div className="d-flex gap-2">
+                <div className="d-flex gap-2" style={{marginLeft: "-15px"}}>
                   {projects[0].technologies.map((t, index) => (
                     <span key={index}>{t}</span>
                   ))}
