@@ -8,20 +8,30 @@ import NextImage from "../../images/next.png";
 import BootImage from "../../images/boot.png";
 import NodeImage from "../../images/node.png";
 import PgImage from "../../images/pg.png";
+import TwImage from '../../images/tw.png'
+import TsImage from '../../images/ts.png'
+import SqImage from '../../images/sq.png'
+import MongoImage from '../../images/mongo.png'
+import FireImage from '../../images/fire.png'
 import style from "./Skills.module.css";
 import { useLanguage } from "../Language/LanguageContext";
 const Skills = () => {
   const { language } = useLanguage();
   const skillsData = [
     { name: "Javascript", image: javascriptImage },
+    { name: 'Typescript', image: TsImage},
     { name: "HTML", image: HtmlImage },
     { name: "CSS", image: CssImage },
     { name: "React", image: reactImage },
     { name: "NextJS", image: NextImage },
     { name: "Bootstrap", image: BootImage },
+    { name: 'Tailwind', image: TwImage},
     { name: "NodeJS", image: NodeImage },
     { name: "ExpressJS", image: expressImage },
     { name: "PostgreSQL", image: PgImage },
+    { name: "Sequelize", image: SqImage },
+    { name: 'MongoDB', image: MongoImage},
+    { name: 'Firebase', image: FireImage}
   ];
 
   return (
@@ -32,11 +42,13 @@ const Skills = () => {
       <div className={style.hrContainer}>
         <hr className={style.customHr} />
       </div>
-      <div className="d-flex justify-content-center">
+      <div className="row justify-content-center">
         {skillsData.map((skill) => (
-          <div key={skill.name} className={style.cardContainer}>
-            <img src={skill.image} alt={skill.name} className={style.img} />
-            <h5>{skill.name}</h5>
+          <div key={skill.name} className="col-6 col-sm-4 col-md-3 col-lg-2 mb-4">
+            <div className={style.cardContainer}>
+              <img src={skill.image} alt={skill.name} className={style.img} />
+              <h5>{skill.name}</h5>
+            </div>
           </div>
         ))}
       </div>

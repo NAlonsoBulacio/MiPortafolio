@@ -30,7 +30,7 @@ const Resume = () => {
         onClick={handleDownloadPDF}
         style={{ marginLeft: "0px", marginTop: "-3px" }}
       >
-        {language === "es" ? "Descargar CV" : "Download CV"}{" "}
+        {language === "es" ? "Descargar CV" : "Download CV"}
         <FaCloudDownloadAlt
           size={35}
           style={{ marginLeft: "0px", marginTop: "-3px" }}
