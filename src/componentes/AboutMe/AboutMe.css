@@ -30,6 +30,12 @@
 .imagen-nico {
   max-width: 300px;
   border-radius: 30%; 
+  border: 3px solid #ccc; 
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.7);
+  transition: border-color 0.5s; 
+}
+.imagen-nico:hover {
+  border-color:  #e2630e;
 }
 .hr-container {
   display: flex;
@@ -40,12 +46,13 @@
 .custom-hr {
   border: 10px;
   justify-content: center;
-  height: 5px; /* Ajusta el grosor del hr */
+  height: 5px; 
   width: 50%;
-  background-color: #e2630e; /* Color bordó - puedes ajustar este valor */
-  margin: 10px 0; /* Espaciado vertical */
+  background-color: #e2630e; 
+  margin: 10px 0; 
 }
 
 .custom-link {
   text-decoration: none;
 }
+

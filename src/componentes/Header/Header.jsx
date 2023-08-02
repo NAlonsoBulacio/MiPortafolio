@@ -24,12 +24,12 @@ const Header = () => {
                 {language === 'es' ? 'Sobre mi' : 'About me'}
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item d-flex align-items-center">
               <a className="nav-link" href="#projects">
                 {language === 'es' ? 'Proyectos' : 'Projects'}
               </a>
             </li>
-            <li className="nav-item">
+            <li className="nav-item d-flex align-items-center">
               <a className="nav-link" href="#skills">
                 {language === 'es' ? 'Habilidades' : 'Skills'}
               </a>

@@ -20,12 +20,13 @@
     margin-right: 10px;
   }
   .nav-link {
+    width: 100px;
     font-family: 'Roboto Mono', monospace;
     color: white; 
-    margin-right: 13px;
   }
 
   .custom-container {
-    max-width: 1200px; /* Puedes ajustar el ancho según tus necesidades */
+    color: aliceblue;
+    width: 430px; /* Puedes ajustar el ancho según tus necesidades */
     margin: 0 auto; /* Esto centrará horizontalmente el contenedor */
   }
