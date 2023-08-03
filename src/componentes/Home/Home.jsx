@@ -10,7 +10,7 @@ const Home = () => {
     >
       <h1 className="h1">{language === 'es' ? 'Bienvenido!' : 'Welcome!'}<span role="img" aria-label="Saludo">
         👋
-      </span>{language === 'es' ? 'Soy Nicolas Alonso y este es mi Portafolio.' : "I'm Nicolas Alonso and this is my Porfolio."}</h1>
+      </span>{language === 'es' ? 'Soy Nicolas Alonso y este es mi Portafolio.' : "I'm Nicolas Alonso and this is my Portfolio."}</h1>
       <h3 className="h3">Full Stack Developer</h3>
     </section>
   );
