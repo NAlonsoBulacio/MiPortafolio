@@ -22,21 +22,21 @@ const AboutMe = () => {
           className="d-flex flex-column-reverse justify-content-between gap-3"
           style={{ marginTop: "40px", marginRight: "50px" }}
         >
-          <div className="d-flex gap-5" style={{ marginLeft: "89px" }}>
+          {/* <div className="d-flex gap-5" style={{ marginLeft: "89px" }}>
             <Resume />
-          </div>
+          </div> */}
           <img src={NicoImg} alt="Nicolas Alonso" className="imagen-nico" />
         </div>
         <div className="flex flex-column gap-4" style={{ marginLeft: "50px" }}>
-          <h3 className="text-5xl font-bold">
+          <h3 className="text-5xl font-bold" style={{ marginBottom: "20px" }}>
             {language === "es"
-              ? "Desarrollador de aplicaciones en Javascript"
+              ? "Desarrollador Web Full Stack"
               : "Javascript Web Developer"}
             <br className="d-none d-sm-block" />
           </h3>
           <p className="p">
             {language === "es"
-              ? "Disfruto mucho el trabajo creativo, aprender con mis compañeros y estudiar. Pasé por distintos ámbitos como la Agronomia, Música y programación! Desde mis inicios en el E-Commerce quedé fascinado con la tecnologia, el diseño web y el marketing."
+              ? "Disfruto mucho el trabajo creativo, aprender con mis compañeros y estudiar. Pasé por distintos ámbitos como la Agronomia, Música y programación! Desde mis inicios en el E-Commerce con Shopify quedé fascinado con la tecnologia, el diseño web y el marketing."
               : "I really enjoy creative work, learning with my colleagues, and studying. I have gone through different fields such as Agronomy, Music, and programming! Since my beginnings in E-Commerce, I have been fascinated with technology, web design, and marketing."}
           </p>
           <p className="p">
