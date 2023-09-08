@@ -11,7 +11,7 @@ import "../blog.css";
 
 const Landing = () => {
   return (
-    <div className="fragment bg-dark">
+    <div className="smooth-scroll fragment bg-dark ">
       <Header />
       <Home />
       <div className="containerAbout bg-dark">

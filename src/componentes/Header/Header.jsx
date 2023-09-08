@@ -13,33 +13,38 @@ const Header = () => {
     >
       <div className="container d-flex justify-content-between align-items-center">
         <div className="nico-div">
-        <a className="navbar-brand nav-nico" href="#">
+          <a className="navbar-brand nav-nico" href="#">
             Nicolás Alonso
           </a>
         </div>
         <div className="custom-container justify-content-center ">
-          <ul className="navbar-nav d-flex justify-content-center" style={{marginLeft: "-8px"}}>
-            <li className="nav-item d-flex align-items-center">
-              <a className="nav-link" href="#about">
-                {language === 'es' ? 'Sobre mi' : 'About me'}
-              </a>
-            </li>
-            <li className="nav-item d-flex align-items-center">
-              <a className="nav-link" href="#projects">
-                {language === 'es' ? 'Proyectos' : 'Projects'}
-              </a>
-            </li>
-            <li className="nav-item d-flex align-items-center">
-              <a className="nav-link" href="#skills">
-                {language === 'es' ? 'Habilidades' : 'Skills'}
-              </a>
-            </li>
-            <li className="nav-item d-flex align-items-center">
-              <a className="nav-link" href="#contact">
-                {language === 'es' ? 'Contáctame' : 'Contact me'}
-              </a>
-            </li>
-          </ul>
+          <div className="d-none d-md-block">
+            <ul
+              className="navbar-nav d-flex justify-content-center"
+              style={{ marginLeft: "-8px" }}
+            >
+              <li className="nav-item d-flex align-items-center">
+                <a className="nav-link" href="#about">
+                  {language === "es" ? "Sobre mi" : "About me"}
+                </a>
+              </li>
+              <li className="nav-item d-flex align-items-center">
+                <a className="nav-link" href="#projects">
+                  {language === "es" ? "Proyectos" : "Projects"}
+                </a>
+              </li>
+              <li className="nav-item d-flex align-items-center">
+                <a className="nav-link" href="#skills">
+                  {language === "es" ? "Habilidades" : "Skills"}
+                </a>
+              </li>
+              <li className="nav-item d-flex align-items-center">
+                <a className="nav-link" href="#contact">
+                  {language === "es" ? "Contáctame" : "Contact me"}
+                </a>
+              </li>
+            </ul>
+          </div>
         </div>
         <div>
           <a
