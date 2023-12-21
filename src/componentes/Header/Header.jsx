@@ -3,9 +3,13 @@ import "./Header.css";
 import { FaLinkedinIn, FaGithub, FaEnvelope } from "react-icons/fa";
 import LanguageToggle from "../LanguageToggle/LanguageToggle";
 import { useLanguage } from "../Language/LanguageContext";
+import sendContactEvent from "../../MetaConversiones/sendContactEvent";
 const Header = () => {
   const { language } = useLanguage();
-
+  const handleButtonClick = () => {
+    sendContactEvent(); 
+    console.log("enviaste el evento con exito");
+  };
   return (
     <nav
       className="navbar navbar-expand-md bg-dark sticky-top border-bottom py-4"
@@ -53,7 +57,9 @@ const Header = () => {
             rel="noreferrer"
             className="hover:translate-y-1 duration-300 icon-linkedin"
           >
-            <FaLinkedinIn size={30} />
+            <button onClick={handleButtonClick} >
+              <FaLinkedinIn size={30} />
+            </button>
           </a>
           <a
             href="https://github.com/NAlonsoBulacio"
